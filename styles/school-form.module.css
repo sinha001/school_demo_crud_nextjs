@@ -1,0 +1,105 @@
+
+.form{
+    display:block;
+    width: 100%;
+    background:#ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(16,24,40,0.4);
+}
+
+.title {
+  font-size: 24px;
+  line-height: 1.3;
+  margin: 0 0 16px 0;
+  color: #111827;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.field label {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.field input {
+  height: 40px;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.field input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.help {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+@media (min-width: 640px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.error {
+  margin-top: 6px;
+  color: #b91c1c;
+  font-size: 12px;
+}
+
+.success {
+  margin: 10px 0;
+  color: #065f46;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.errorBanner {
+  margin: 10px 0;
+  color: #991b1b;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.submit {
+  height: 42px;
+  min-width: 140px;
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.submit:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
